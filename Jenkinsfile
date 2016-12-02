@@ -16,6 +16,11 @@ node {
     }
 
     stage('Deploy') {
-
+      try {
+        sh "ssh -o StrictHostKeyChecking=no root@46.21.102.98 docker service update --image registry.artmann.co:5000/artmann/php-example-app:$BUILD_NUMBER php-example-app"
+      } catch(err) {
+          currentBuild.result = 'Failed'
+          throw err
+      }
     }
 }
