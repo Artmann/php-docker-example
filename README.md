@@ -1,0 +1,2 @@
+# php-docker-example
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/0bfd782247ec4debb51fb1b97b0ca2b6)](https://www.codacy.com/app/artgaard/php-docker-example?utm_source=github.com&utm_medium=referral&utm_content=Artmann/php-docker-example&utm_campaign=badger)
